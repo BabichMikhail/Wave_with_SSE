@@ -1,0 +1,25 @@
+object WaveForm: TWaveForm
+  Left = 696
+  Height = 512
+  Top = 58
+  Width = 512
+  Caption = 'Wave'
+  ClientHeight = 512
+  ClientWidth = 512
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object WavePB: TPaintBox
+    Left = 0
+    Height = 512
+    Top = 0
+    Width = 512
+    Align = alClient
+  end
+  object Timer: TTimer
+    Interval = 1
+    OnTimer = TimerTimer
+    OnStartTimer = TimerStartTimer
+    left = 214
+    top = 48
+  end
+end
